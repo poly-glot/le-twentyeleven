@@ -1,0 +1,6 @@
+[submodule "plugins/layout-engine"]
+	path = plugins/layout-engine
+	url = https://github.com/simpleux/layout-engine.git
+[submodule "plugins/lesscss"]
+	path = plugins/lesscss
+	url = https://github.com/leafo/lessphp.git

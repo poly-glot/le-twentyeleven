@@ -1,0 +1,60 @@
+/*
+Theme Name: Twenty Eleven (LE Edition)
+Theme URI: http://wordpress.org/extend/themes/twentyeleven_le
+Author: Junaid Ahmed
+Author URI: http://www.simpleux.co.uk
+Description: Re-define Twenty Eleven in drag and drop; LessCSS compatible Layout Engine Framework.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: le, layout-engine, dark, light, white, black, gray, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentyeleven
+*/
+
+@import url("twenty-eleven-default.css");
+@import url("grid.css");
+[class*="span"] {
+  clear:none;
+  min-height:5px;
+}
+.widget ul { list-style:none; }
+.widget ul ul { list-style:square; }
+div.row {
+  margin-bottom:15px;
+  padding-bottom:15px;
+}
+#branding { border-top:none; }
+#branding div.row {
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+#branding hgroup {
+  padding-top:20px;
+  margin:0 0 20px 0;
+}
+#site-titlex { margin-left:0; }
+#site-titlex a {
+  color:#111;
+  font-size:30px;
+  font-weight:bold;
+  line-height:36px;
+  text-decoration:none;
+}
+.singular .hentry {
+  padding:18px 0 0 0;
+  margin:0;
+}
+.singular .entry-header .entry-meta { top:20px; }
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.singular .entry-meta .edit-link a { display:none; }
+body {
+  background-color:#f1f1f1;
+  color:#373737;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a { color:#500f50; }
+h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a, .entry-title, .entry-title a { color:#500f50; }
