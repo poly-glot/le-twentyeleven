@@ -5,6 +5,9 @@
 
 $template_dir = get_template_directory();
 
+// If user has not installed layout engine framework, then try to load it form source.
+require( $template_dir . '/extensions/compatibility.php' );
+
 // Create theme settings based on LessCSS and hooks
 require( $template_dir . '/extensions/lesscss_options.php' );
 
